@@ -8,23 +8,14 @@ x = 10
 y = 2.24552
 z = "I like turtles!"
 
-# Using the printf operator (%), print the following feeding in the values of x,
+# Using the printing operator (%), print the following feeding in the values of x,
 # y, and z:
 # x is 10, y is 2.25, z is "I like turtles!"
-print('x is %d, y is %.2f, z is %s' % (x, y, z))
+print('x is %(x)d, y is %(y).2f, z is %(z)s' %
+      {"x": x, "y": y, "z": z})
+
 # Use the 'format' string method to print the same thing
-print('x is {}, y is {:.2f}, z is {}'.format(x, y, z))
+print("x is {x:d}, y is {y:.2f}, z is {z:s}".format(x=x, y=y, z=z))
+
 # Finally, print the same thing using an f-string
 print(f'x is {x}, y is {y:.2f}, z is {z}')
-
-# # Python program showing  
-# # use of format() method 
-  
-# # using format() method 
-# print('I love {} for "{}!"'.format('Geeks', 'Geeks')) 
-  
-# # using format() method and refering  
-# # a position of the object 
-# print('{0} and {1}'.format('Geeks', 'Portal')) 
-  
-# print('{1} and {0}'.format('Geeks', 'Portal')) 
