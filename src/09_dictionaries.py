@@ -35,7 +35,7 @@ waypoints = [
 
 # Add a new waypoint to the list
 # YOUR CODE HERE
-waypoints.append({
+waypoints.append( {
     "lat": 42,
     "lon": -125,
     "name": "a fourth place"
@@ -45,7 +45,7 @@ waypoints.append({
 # Note: It's okay to access the dictionary using bracket notation on the
 # waypoints list.
 
-# YOUR CODE HERE
+# YOUR CODE HEREquit
 waypoints[0].update(lon=-130)
 waypoints[0].update(name="not a real place")
 print(waypoints)
